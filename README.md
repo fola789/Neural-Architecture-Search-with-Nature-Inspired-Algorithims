@@ -4,7 +4,7 @@ and the other physics-inspired and analysing the computational speed, accuracy, 
 
 
 ## Dataset
-![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/MNIST-Fashion-MNIST-and-CIFAR-10-training-samples.png)
+![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/MNIST-Fashion-MNIST-and-CIFAR-10-training-samples.png)
 
 ### Mnist
 
