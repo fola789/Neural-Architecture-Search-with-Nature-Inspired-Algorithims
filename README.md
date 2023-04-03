@@ -4,7 +4,7 @@ and the other physics-inspired and analysing the computational speed, accuracy, 
 
 
 ## Dataset
-![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/tree/main/ReadMeImages/MNIST-Fashion-MNIST-and-CIFAR-10-training-samples.png)
+![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/MNIST-Fashion-MNIST-and-CIFAR-10-training-samples.png)
 
 ### Mnist
 
@@ -37,24 +37,37 @@ The project features 4 key components, in which 4 different algorithims are impl
 Where prior research has deemed that strategies for NAS could be classified and divided accordingly into three dimensions: search space, search strategy, and performance estimation/prediction strategy
 ### Genetic Algorithims
 ![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/geneticAlgorithimModel.png)
-Each model is represented as fixed-width genome encoding information about the network's structure. a model contains a number of convolutional layers, a number of dense layers, and an optimizer. The convolutional layers can be evolved to include varying numbers of feature maps, different activation functions, varying proportions of dropout, and whether to perform batch normalization and/or max pooling. The same options are available for the dense layers with the exception of max pooling. 
+<br/>
+Each model is represented as fixed-width genome encoding information about the network's structure. a model contains a number of convolutional layers, a number of dense layers, and an optimizer. The convolutional layers can be evolved to include varying numbers of feature maps, different activation functions, varying proportions of dropout, and whether to perform batch normalization and/or max pooling. The same options are available for the dense layers with the exception of max pooling. <br/>
+
 ![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/geneticAlgorithim2.png)
 
 ### DeepSwarm
 ![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/deepswarmModel.png)
-(1) The ant is placed on the input node. (2) The ant checks what transitions are available. (3) The ant uses the ACS selection rule to choose the next node. (4) After choosing the next node the ant selects node’s attributes. (5) After all ants finished their tour the pheromone is updated. (6) The maximum allowed depth is increased and the new ant population is generated.
+(1) The ant is placed on the input node. (2) The ant checks what transitions are available. (3) The ant uses the ACS selection rule to choose the next node. (4) After choosing the next node the ant selects node’s attributes. (5) After all ants finished their tour the pheromone is updated. (6) The maximum allowed depth is increased and the new ant population is generated.<br/>
+
+![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/deepswarm2.png)<br/>
+
 **Note**: Arrow thickness indicates the pheromone amount, meaning that thicker arrows have more pheromone.
-![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/deepswarm2.png)
+
 
 ### Particle Swarm
+
+The global best particle is based on the best blocks found in the swarm by following the PSO algorithm
+The algorithm takes as input the training data and parameters related to the CNN architectures, such as the maximum number of layers. It consists of six procedures: CNN representation, swarm initialization, fitness evaluation of particles, velocity computation, particle update, and measuring the difference between two particles.<br/>
 ![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/pso1.png)
 
+Algorithm 2 describes
+
 ![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/pso2.png)
+nitialization of the swarm. This function creates N particles with random CNN architectures, where each particle has a random number of layers between three and lmax, with the first and last layer always being a convolution and a fully-connected layer, respectively. Fully-connected layers can only be placed at the end of the architecture, and the algorithm ensures that once a fully-connected layer is added, every subsequent layer is also a fully-connected layer. The addConv(), addPool(), and addFC() functions add convolutional, pooling, and fully-connected layers to the particle architecture with randomly chosen hyperparameters. The activation function of all layers is always ReLU, and the number of pooling layers is constrained by the size of the input data. <br/>
 
 ![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/pso3.png)
 
 ### Simulated Annealing
+The idea behind the  algorithm is that local minima can be solved by accepting worse solutions with some probability, in addition to subsampling the local region for better solutions.
 
+A candidate move is randomly selected; this move is accepted if it leads to a solution with a better objective function value than the current solution, otherwise the move is accepted with a probability that depends on the deterioration ∆ of the objective function value. The probability of acceptance is computed as e−∆/T , using  a temperature T as control parameter.  <br/>
 
 ![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/simulatedAnnealing2.png)
 
