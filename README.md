@@ -36,30 +36,30 @@ The project features 4 key components, in which 4 different algorithims are impl
 
 Where prior research has deemed that strategies for NAS could be classified and divided accordingly into three dimensions: search space, search strategy, and performance estimation/prediction strategy
 ### Genetic Algorithims
-![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/tree/main/ReadMeImages/geneticAlgorithimModel.png)
+![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/geneticAlgorithimModel.png)
 Each model is represented as fixed-width genome encoding information about the network's structure. a model contains a number of convolutional layers, a number of dense layers, and an optimizer. The convolutional layers can be evolved to include varying numbers of feature maps, different activation functions, varying proportions of dropout, and whether to perform batch normalization and/or max pooling. The same options are available for the dense layers with the exception of max pooling. 
-![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/tree/main/ReadMeImages/geneticAlgorithim2.png)
+![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/geneticAlgorithim2.png)
 
 ### DeepSwarm
-![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/tree/main/ReadMeImages/deepswarmModel.png)
+![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/deepswarmModel.png)
 (1) The ant is placed on the input node. (2) The ant checks what transitions are available. (3) The ant uses the ACS selection rule to choose the next node. (4) After choosing the next node the ant selects node’s attributes. (5) After all ants finished their tour the pheromone is updated. (6) The maximum allowed depth is increased and the new ant population is generated.
 **Note**: Arrow thickness indicates the pheromone amount, meaning that thicker arrows have more pheromone.
-![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/tree/main/ReadMeImages/deepswarm2.png)
+![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/deepswarm2.png)
 
 ### Particle Swarm
-![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/tree/main/ReadMeImages/pso1.png)
+![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/pso1.png)
 
-![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/tree/main/ReadMeImages/pso2.png)
+![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/pso2.png)
 
-![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/tree/main/ReadMeImages/pso3.png)
+![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/pso3.png)
 
 ### Simulated Annealing
 
 
-![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/tree/main/ReadMeImages/simulatedAnnealing2.png)
+![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/simulatedAnnealing2.png)
 
 ## Results
-![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/tree/main/ReadMeImages/geneticaAlgorithmResult.png)
-![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/tree/main/ReadMeImages/deepswarmResults.png)
-![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/tree/main/ReadMeImages/psoResults.png)
-![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/tree/main/ReadMeImages/simulatedAnnealingResults.png)
+![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/geneticaAlgorithmResult.png)
+![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/deepswarmResults.png)
+![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/psoResults.png)
+![](https://github.com/fola789/Neural-Architecture-Search-with-Nature-Inspired-Algorithims/blob/main/ReadMeImages/simulatedAnnealingResults.png)
